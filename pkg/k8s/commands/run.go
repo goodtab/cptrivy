@@ -18,6 +18,7 @@ import (
 	"github.com/aquasecurity/trivy/pkg/k8s/report"
 	"github.com/aquasecurity/trivy/pkg/k8s/scanner"
 	"github.com/aquasecurity/trivy/pkg/log"
+	"github.com/aquasecurity/trivy/pkg/notification"
 	"github.com/aquasecurity/trivy/pkg/types"
 	"github.com/aquasecurity/trivy/pkg/version/doc"
 )
@@ -62,7 +63,8 @@ func newRunner(flagOpts flag.Options, cluster string) *runner {
 }
 
 func (r *runner) run(ctx context.Context, artifacts []*k8sArtifacts.Artifact) error {
-	runner, err := cmd.NewRunner(ctx, r.flagOpts)
+	versionChecker := notification.NewVersionChecker(string(cmd.TargetK8s), &r.flagOpts)
+	runner, err := cmd.NewRunner(ctx, r.flagOpts, cmd.WithVersionChecker(versionChecker))
 	if err != nil {
 		if errors.Is(err, cmd.SkipScan) {
 			return nil
