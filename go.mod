@@ -35,7 +35,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.84.1
 	github.com/aws/smithy-go v1.22.4
 	github.com/bitnami/go-version v0.0.0-20231130084017-bb00604d650c
-	github.com/bmatcuk/doublestar/v4 v4.9.0
+	github.com/bmatcuk/doublestar/v4 v4.9.1
 	github.com/cenkalti/backoff/v4 v4.3.0
 	github.com/cheggaaa/pb/v3 v3.1.7
 	github.com/containerd/containerd/v2 v2.1.3
@@ -129,7 +129,7 @@ require (
 	helm.sh/helm/v3 v3.18.4
 	k8s.io/api v0.33.3
 	k8s.io/utils v0.0.0-20241104100929-3ea5e8cea738
-	modernc.org/sqlite v1.38.0
+	modernc.org/sqlite v1.38.1
 )
 
 require github.com/rogpeppe/go-internal v1.14.1
@@ -450,7 +450,7 @@ require (
 	go.uber.org/zap v1.27.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.2 // indirect
 	go.yaml.in/yaml/v3 v3.0.3 // indirect
-	golang.org/x/exp v0.0.0-20250606033433-dcc06ee1d476 // indirect
+	golang.org/x/exp v0.0.0-20250620022241-b7579e27df2b // indirect
 	golang.org/x/oauth2 v0.30.0 // indirect
 	golang.org/x/sys v0.34.0 // indirect
 	golang.org/x/telemetry v0.0.0-20240522233618-39ace7a40ae7 // indirect
@@ -475,7 +475,7 @@ require (
 	k8s.io/klog/v2 v2.130.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20250318190949-c8a335a9a2ff // indirect
 	k8s.io/kubectl v0.33.2 // indirect
-	modernc.org/libc v1.65.10 // indirect
+	modernc.org/libc v1.66.3 // indirect
 	modernc.org/mathutil v1.7.1 // indirect
 	modernc.org/memory v1.11.0 // indirect
 	mvdan.cc/sh/v3 v3.11.0 // indirect
